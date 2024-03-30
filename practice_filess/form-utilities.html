@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form-utilities</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    
+</head>
+<body>
+    <h1>FORM-UTILITIES</h1>
+    <form action="" class="m-5 bg-info p-5">
+        <div class="border border-success border-4 p-3">
+        <label for="firstname" class="form-label">Firstname</label>
+        <input type="text" name="firstname" id="firstname" class="form-control">
+        <label for="lastname" class="form-label">lastname</label>
+        <input type="text" name="lastname" id="lastname" class="form-control">
+    </div>
+    </form>
+    <h1>Form sizing</h1>
+    <input type="text" class="form-control form-control-sm" placeholder="Small size"><br>
+    <input type="text" class="form-control" placeholder="Medium size"><br>
+    <input type="text" class="form-control form-control-lg" placeholder="large size">
+    <h1>From text (message for the user)</h1>
+    <div class="div">
+        <label for="firstname1" class="form-label">FirstName</label>
+        <input type="text" name="firstname" id="firstname1" class="form-control">
+        <div class="form-text">Name Must be a character [A-Z]</div>
+
+        <label for="lastname1" class="form-label">LastName</label>
+        <input type="text" name="lastname1" id="" class="form-control">
+        <div class="form-text">Name Must be a character [A-Z]</div>
+    </div>
+    <h1>Diasbled and readonly(Restrictind the user)</h1>
+    <div class="div">
+        <label for="firstname1" class="form-label">FirstName</label>
+        <input type="text" name="firstname" id="firstname1" class="form-control" disabled>
+        <div class="form-text">Name Must be a character [A-Z]</div>
+        
+        <label for="lastname1" class="form-label">LastName</label>
+        <input type="text" name="lastname1" id="" class="form-control" readonly>
+        <div class="form-text">Name Must be a character [A-Z]</div>
+    </div>
+    <h1>Form control-plaintext to remove the borders from th einput field</h1>
+    <div class="div">
+        <label for="firstname1" class="form-label">FirstName</label>
+        <input type="text" name="firstname" id="firstname1" class="form-control-plaintext">
+    </div>
+    <div class="container">
+        <input type="file" name="" id="" class="form-control">
+        <input type="file" name="" id="" class="form-control" multiple>
+    </div>
+    <div class="container">
+        <input type="color" name="color" id="" value="#decba4" class="form-control form-control-color">
+    </div>
+
+    <h1>Auto-completion</h1>
+    <div class="container">
+        <label for="cityname" class="form-label">Enter City</label>
+        <input type="text" name="" id="cityname" class="form-control" list="options">
+        <datalist id="options">
+            <option value="c-program"></option>
+            <option value="java"></option>
+            <option value="python"></option>
+            <option value=".net"></option>
+            <option value="javasript"></option>
+        </datalist>
+    </div>
+    <div class="row">
+        <div class="col-6">
+            <p>select Range</p>
+            <input type="range" name="Hello" id="" class="form-range">
+            <p>select Range</p>
+            <input type="range" name="Hello" id="" class="form-range" disabled>
+            <p>select Range</p>
+            <input type="range" name="Hello" id="" class="form-range" min="2" max="4" step="1">
+        </div>
+    </div>
+</body>
+</html>
